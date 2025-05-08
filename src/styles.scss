@@ -1,4 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
+body{@apply font-noto_sans;}
+.anim{@apply duration-300 transition-all;}
+.warrper{@apply w-full max-w-[1440px] px-5 mx-auto;}
+.h1, h1{@apply text-26 md:text-34 lg:text-44 xl:text-48 2xl:text-62 font-bold text-white;}
+.h2, h2{@apply text-24 md:text-28 lg:text-38 2xl:text-48 font-bold text-black;}
+.h3, h3{@apply text-20 md:text-24 lg:text-28 2xl:text-32;}
+.h4, h4{@apply text-18 md:text-20 lg:text-24 2xl:text-28;}
+.h5, h5{@apply text-16 lg:text-18 2xl:text-22;}
+.text18{@apply text-14 lg:text-16 xl:text-18;}
+.text16{@apply text-12 lg:text-14 xl:text-16;}
+.text20{@apply text-16 xl:text-18 2xl:text-20;}
+.btn_primary{@apply inline-block border-2 border-orange bg-orange text-white font-bold leading-tight text-[14px] lg:text-[16px] xl:text-[18px] align-middle rounded-full py-2 lg:py-3 px-3 xl:px-5;}
+.label{@apply text-16 font-bold text-black;}
+.input{@apply w-full bg-white border-2 border-[#E8E8E7] outline-none text-14 font-normal text-black rounded-md lg:rounded-lg xl:rounded-[10px] py-1.5 md:py-2 px-3 md:px-4;}
+table.dan_rashi tr th{@apply bg-d_green text-white font-bold py-2.5 px-3;}
+table.dan_rashi tr th:first-child{@apply rounded-tl-[10px];}
+table.dan_rashi tr th:last-child{@apply rounded-tr-[10px];}
+table.dan_rashi tr td{@apply text-black font-normal border-b-2 border-[#F7F4EF] text-20 py-2.5 px-3 text-center bg-white;}
+.radio2{@apply w-5 h-5 rounded-full border-2 border-[#7C7A78] flex items-center justify-center;}
+input:checked + .radio2{@apply border-[#02A95C];}
+input:checked + .radio2 span{@apply opacity-100;}
+.mansory-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    position: relative;
+  }
+  
+  .mansory-gallery .column {
+    flex: 25%;
+  }
+  
+  .mansory-gallery .column img {
+    border: 0.5rem solid #fff;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .mansory-gallery .column {
+      flex: 50%;
+    }
+  }
 @tailwind utilities;

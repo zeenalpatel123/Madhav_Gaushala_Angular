@@ -1,0 +1,78 @@
+<header class="py-5 relative">
+    <div class="warrper relative z-20">
+        <div class="flex items-center justify-between">
+            <a href="">
+                <img src="assets/images/logo.webp" class="mx-auto max-w-32 xs:max-w-36 md:max-w-44 xl:max-w-full" alt="logo"/>
+            </a>
+            <ul class="hidden lg:flex items-center lg:space-x-8 xl:space-x-10 2xl:space-x-12">
+                <li>
+                    <a [routerLink]="'home'" class="hover_effect text18 text-black font-semibold inline-block py-2 hover:text-orange anim">होम</a>
+                </li>
+                <li>
+                    <a [routerLink]="'aboutus'" class="hover_effect text18 text-black font-semibold inline-block py-2 hover:text-orange anim">हमारे बारे में</a>
+                </li>
+                <li>
+                    <a [routerLink]="'goal'" class="hover_effect text18 text-black font-semibold inline-block py-2 hover:text-orange anim">हमारा लक्ष्य</a>
+                </li>
+                <li>
+                    <a [routerLink]="'event'" class="hover_effect text18 text-black font-semibold inline-block py-2 hover:text-orange anim">इवेंट्स</a>
+                </li>
+                <li>
+                    <a [routerLink]="'blogs'" class="hover_effect text18 text-black font-semibold inline-block py-2 hover:text-orange anim">समाचार</a>
+                </li>
+                <li>
+                    <a [routerLink]="'gallery'" class="hover_effect text18 text-black font-semibold inline-block py-2 hover:text-orange anim">गैलरी</a>
+                </li>
+                <li>
+                    <a [routerLink]="'donetion'" class="hover_effect text18 text-black font-semibold inline-block py-2 hover:text-orange anim">दान कीजिए</a>
+                </li>
+                <li>
+                    <a [routerLink]="'becomesayamsevak'" class="hover_effect text18 text-black font-semibold inline-block py-2 hover:text-orange anim">स्वयंसेवक बने</a>
+                </li>
+            </ul>
+            <div class="flex items-center space-x-4">
+                <div class="w-full min-w-28 xl:min-w-32 2xl:min-w-[200px]">
+                    <button class="btn_primary w-full min-w-28 xl:min-w-32 2xl:min-w-[200px] bg-orange hover:bg-transparent hover:text-black hover:border-orange anim">संपर्क करें</button>
+                </div>
+                <span class="icon-menu1 text-[24px] text-orange block lg:hidden" onclick="toggleActive('#open','-translate-x-full');"></span>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="w-full h-screen bg-black/30 backdrop-blur-sm block lg:hidden anim fixed left-0 -translate-x-full inset-y-0 z-50" id="open">
+    <div class="w-full max-w-96 h-screen bg-[#ffefb1] pb-5 relative border-r border-primary">
+        <div class="p-6 bg-dark flex items-center justify-between border-b border-primary">
+            <a href="#">
+                <img src="assets/images/logo.webp" class="max-w-40 xs:max-w-44" alt="logo"/>
+            </a>
+            <span class="icon-close text-primary text-[20px]" onclick="toggleActive('#open','-translate-x-full');">
+            </span>
+        </div>
+        <ul class="space-y-3.5 p-5 pt-10 text-22 inline-block text-d_green font-bold w-full h-[calc(100%-90px)] overflow-y-auto">
+            <li>
+                <a [routerLink]="'home'" class="hover:text-primary anim" onclick="toggleActive('#open','-translate-x-full');">होम</a>
+            </li>
+            <li>
+                <a [routerLink]="'aboutus'" class="hover:text-primary anim" onclick="toggleActive('#open','-translate-x-full');">हमारे बारे में</a>
+            </li>
+            <li>
+                <a [routerLink]="'goal'" class="hover:text-primary anim" onclick="toggleActive('#open','-translate-x-full');">हमारा लक्ष्य</a>
+            </li>
+            <li>
+                <a [routerLink]="'event'" class="hover:text-primary anim" onclick="toggleActive('#open','-translate-x-full');">इवेंट्स</a>
+            </li>
+            <li>
+                <a [routerLink]="'blogs'" class="hover:text-primary anim" onclick="toggleActive('#open','-translate-x-full');">समाचार</a>
+            </li>
+            <li>
+                <a [routerLink]="'gallery'" class="hover:text-primary anim" onclick="toggleActive('#open','-translate-x-full');">गैलरी</a>
+            </li>
+            <li>
+                <a [routerLink]="'donetion'" class="hover:text-primary anim" onclick="toggleActive('#open','-translate-x-full');">दान कीजिए</a>
+            </li>
+            <li>
+                <a [routerLink]="'becomesayamsevak'" class="hover:text-primary anim" onclick="toggleActive('#open','-translate-x-full');">स्वयंसेवक बने</a>
+            </li>
+        </ul>
+    </div>
+</div>
